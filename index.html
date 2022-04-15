@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Details</title>
+</head>
+
+<body>
+    <h1>Send Your Details <br>To <br>Admin's Mail</h1>
+    <div class="container">
+        <form onsubmit="reset(); return false">
+            <div class="form-item">
+                <label for="">Name: </label><br>
+                <input type="text" name="name" placeholder="Name" required="required">
+            </div>
+            <div class="form-item">
+                <label for="">Phone: </label><br>
+                <input type="text" name="phone" placeholder="Phone" required="required">
+            </div>
+            <div class="form-item">
+                <label for="">Email: </label><br>
+                <input type="email" name="email" placeholder="Email" required="required">
+            </div>
+            <div class="form-item">
+                <label for="">Message</label><br>
+                <textarea name="message" cols="30" rows="10" placeholder="Message" required="required"></textarea>
+
+            </div>
+            <button>Send Email</button>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</body>
+
+</html>
